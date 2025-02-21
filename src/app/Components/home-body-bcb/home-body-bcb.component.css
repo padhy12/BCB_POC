@@ -1,0 +1,588 @@
+/* @media only screen and (max-width: 768px) {
+    .home-section {
+      background-size: 50%;
+      background-position: center center; 
+      background-repeat: no-repeat;
+    }
+  } */
+
+
+.content-box {
+    padding: 107px 12px 63px 54px;
+    background-image: url('../../../../public/BlueImg.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: top;
+}
+
+/* Large Screens (Desktops) */
+@media (min-width: 1200px) {
+    /* .home-section{
+        padding: 70px 0;
+    } */
+     .container{
+        max-width: 100%;
+     }
+    .content-box h2 {
+        font-size: 2.5rem;
+    }
+    .content-box p {
+        font-size: 1.2rem;
+    }
+    .carousel-inner .card {
+        padding: 2rem;
+    }
+    .carousel-inner h5 {
+        font-size: 1.5rem;
+    }
+    .carousel-inner p {
+        font-size: 1.2rem;
+    }
+    .business-section {
+        padding: 30px 70px;
+        /* margin:20px; */
+    }
+    .business-section h2 {
+        font-size: 2.5rem;
+    }
+    .business-section p {
+        font-size: 1.2rem;
+    }
+    .time-back-section {
+        padding:30px 70px;
+    }
+    .boost-business-img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+    .boost-business-section{
+        padding: 1rem 4rem;
+    }
+    .boost-business-text {
+        top: 50%;
+        left: 2%;
+        transform: translateY(-50%);
+        max-width: 50%;
+    }
+    .boost-business-title {
+        font-size: 2.5rem;
+    }
+    .boost-business-desc {
+        font-size: 1.2rem;
+    }
+    .knowledge-section{
+        padding: 1rem 4rem;
+    }
+    .knowledge-title {
+        font-size: 2.5rem;
+    }
+    .knowledge-desc {
+        font-size: 1.2rem;
+    }
+    .knowledge-img {
+        height: 200px;
+        object-fit: cover;
+    }
+    .knowledge-tabs .nav-link {
+        font-size: 1rem;
+    }
+    .explore-text h2 {
+        font-size: 2.5rem;
+    }
+    .explore-desc {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .explore-link {
+        font-size: 1rem;
+    }
+    .explore-img {
+        max-width: 100%;
+        height: auto;
+    }
+    .app-section {
+        padding: 5rem 0;
+    }
+    .app-image img,
+    .app-download img {
+        max-width: 250px;
+    }
+    .contact-section {
+        padding: 5rem 0;
+    }
+    .contact-card {
+        padding: 2rem;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 991px) {
+    .home-section hr {
+        margin: 15px auto;
+    }
+    .home-section {
+        text-align: center;
+    }
+    .container{
+        max-width: 100%;
+     }
+    .content-box {
+        padding: 30px;
+    }
+    .content-box h2 {
+        font-size: 2rem;
+    }
+    .content-box p {
+        font-size: 1rem;
+    }
+    .carousel-inner .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .carousel-inner .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .carousel-inner h5 {
+        font-size: 1.3rem;
+    }
+    .carousel-inner p {
+        font-size: 1rem;
+    }
+    .business-section {
+        text-align: center;
+    }
+    /* .business-section .row {
+        flex-direction: column-reverse;
+    } */
+    .business-section h2 {
+        font-size: 2rem;
+    }
+    .business-section p {
+        font-size: 1rem;
+    }
+    .business-section img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    .time-back-section {
+        text-align: center;
+    }
+    .time-back-section .row {
+        flex-direction: column-reverse;
+    }
+    .time-back-section img {
+        padding: 30px 70px;
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .boost-business-text {
+        max-width: 60%;
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        padding: 2rem;
+    }
+    .boost-business-title {
+        font-size: 2rem;
+    }
+    .boost-business-desc {
+        font-size: 1rem;
+    }
+    .knowledge-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .knowledge-desc {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .knowledge-tabs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .knowledge-tabs .nav-link {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    .knowledge-img {
+        height: 180px;
+    }
+    .knowledge-btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .explore-section {
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    .explore-text {
+        padding: 2rem;
+    }
+    .explore-text h2 {
+        font-size: 2rem;
+    }
+    .explore-desc {
+        font-size: 0.9rem;
+    }
+    .explore-img {
+        max-width: 90%;
+        height: auto;
+    }
+    .app-section {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    /* .app-image img,
+    .app-download img {
+        max-width: 200px;
+    } */
+    .app-image,
+    .app-download {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .app-image img,
+    .app-download img {
+        max-width: 180px;
+        display: flex;
+        justify-content: center;
+    }
+    .contact-section {
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+    .contact-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Small Screens (Mobile Phones) */
+@media (max-width: 768px) {
+    .home-section hr {
+        margin: 15px auto;
+    }
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+        background-size: contain;
+    }
+    .container{
+        max-width: 100%;
+     }
+    .content-box {
+        padding: 20px;
+    }
+    .content-box h2 {
+        font-size: 1.8rem;
+    }
+    .content-box p {
+        font-size: 0.95rem;
+    }
+    .content-box hr {
+        width: 50%;
+    }
+    .home-section img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+    .carousel-inner .col-md-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .carousel-inner .card {
+        padding: 1.5rem;
+    }
+    .carousel-inner h5 {
+        font-size: 1.2rem;
+    }
+    .carousel-inner p {
+        font-size: 0.95rem;
+    }
+    .business-section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    /* .business-section .row {
+        flex-direction: column-reverse;
+    } */
+    .business-section h2 {
+        font-size: 1.8rem;
+    }
+    .business-section p {
+        font-size: 0.95rem;
+    }
+    .business-section img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .time-back-section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .time-back-section .row {
+        flex-direction: column-reverse;
+    }
+    .time-back-section img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    .boost-business-section {
+        position: relative;
+        left: 10px;
+    }
+    .boost-business-img {
+        height: 20rem;
+        width: 100%;
+    }
+    .boost-business-text {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+        max-width: 80%;
+        text-align: center;
+        padding: 1rem;
+    }
+    .boost-business-title {
+        font-size: 1.5rem;
+    }
+    .boost-business-desc {
+        font-size: 0.8rem;
+    }
+    .knowledge-title {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .knowledge-desc {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+    .knowledge-tabs {
+        flex-direction: column;
+        text-align: center;
+    }
+    .knowledge-tabs .nav-item {
+        margin-bottom: 5px;
+    }
+    .knowledge-img {
+        height: 160px;
+    }
+    .knowledge-btn {
+        width: 100%;
+        text-align: center;
+    }
+    .explore-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .explore-text {
+        padding: 1.5rem;
+        order: 2; /* Move text below image */
+    }
+    .explore-text h2 {
+        font-size: 1.8rem;
+    }
+    .explore-desc {
+        font-size: 0.85rem;
+    }
+    .explore-img-container {
+        order: 1;
+        text-align: center;
+    }
+    .explore-img {
+        max-width: 80%;
+        height: auto;
+    }
+    .app-section {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .app-image,
+    .app-download {
+        margin-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .app-image img,
+    .app-download img {
+        /* max-width: 180px; */
+        display: flex;
+        justify-content: center;
+    }
+    .contact-section {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .contact-card {
+        padding: 1.2rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .home-section hr {
+        margin: 15px auto;
+    }
+    .container{
+        max-width: 100%;
+     }
+    .content-box h2 {
+        font-size: 1.5rem;
+    }
+    .content-box p {
+        font-size: 0.9rem;
+    }
+    .home-section img {
+        max-width: 100%;
+    }
+    .carousel-inner .card {
+        padding: 1rem;
+    }
+    .carousel-inner h5 {
+        font-size: 1.1rem;
+    }
+    .carousel-inner p {
+        font-size: 0.9rem;
+    }
+    .business-section {
+        padding: 30px 15px;
+    }
+    .business-section h2 {
+        font-size: 1.5rem;
+    }
+    .business-section p {
+        font-size: 0.9rem;
+    }
+    .business-section img {
+        max-width: 90%;
+    }
+    .time-back-section {
+        padding: 30px 15px;
+    }
+    .time-back-section img {
+        max-width: 100%
+    }
+    .boost-business-img {
+        height: 18rem;
+    }
+    .boost-business-text {
+        max-width: 90%;
+        padding: 0.2rem;
+    }
+    .boost-business-title {
+        font-size: 1rem;
+    }
+    .boost-business-desc {
+        font-size: 0.6rem;
+    }
+    .knowledge-title {
+        font-size: 1.5rem;
+    }
+    .knowledge-desc {
+        font-size: 0.9rem;
+    }
+    .knowledge-tabs {
+        flex-direction: column;
+    }
+    .knowledge-img {
+        height: 140px;
+    }
+    .knowledge-btn {
+        width: 100%;
+    }
+    .explore-text h2 {
+        font-size: 1.5rem;
+    }
+    .explore-desc {
+        font-size: 0.8rem;
+    }
+    .explore-link {
+        font-size: 0.9rem;
+    }
+    .explore-img {
+        max-width: 100%;
+    }
+    .app-section {
+        padding: 1.5rem 0;
+    }
+    .app-image img,
+    .app-download img {
+        max-width: 150px;
+    }
+    .contact-section {
+        padding: 1.5rem 0;
+    }
+    .contact-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contact-card button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+}
+  /* @media (max-width: 768px) {
+    .home-section {
+        min-height: 400px;
+        padding: 3rem 1rem;
+    }
+    .home-section h2 {
+        font-size: 1.8rem;
+    }
+    .home-section p {
+        font-size: 1rem;
+    }
+    .home-section button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+} */
+
+/* @media (max-width: 768px) {
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+        min-height: 400px;
+        padding: 3rem 1rem;
+    }
+
+    .home-section .col-lg-6 {
+        padding: 20px;
+    }
+    .home-section hr {
+        margin: 15px auto;
+    }
+
+    .home-section img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+} */
+
+/* Small devices (Phones) */
+/* @media (max-width: 576px) {
+    .home-section {
+        min-height: 350px;
+    }
+    .home-section h2 {
+        font-size: 1.5rem;
+    }
+    .home-section p {
+        font-size: 0.9rem;
+    }
+    .home-section hr {
+        margin: 15px auto;
+    }
+    .home-section button {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+} */
