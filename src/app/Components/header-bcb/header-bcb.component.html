@@ -29,27 +29,6 @@
     </div>
   </nav>
 
-
-  <!-- <ul class="nav nav-pills px-3 py-2 d-flex justify-content-between" style="background-color: #1042b0;">
-    <div class="d-flex">
-      <li class="nav-item">
-        <a class="nav-link text-white active" href="#">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Our Solutions
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Solution 1</a></li>
-          <li><a class="dropdown-item" href="#">Solution 2</a></li>
-        </ul>
-      </li>
-    </div>
-    <li class="nav-item ms-auto">
-      <a class="nav-link text-white" href="#">Contact Us</a>
-    </li>
-  </ul> -->
-
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1042b0;">
     <div class="container-fluid">
       <!-- Left-Aligned Nav Items -->
@@ -59,7 +38,7 @@
           Our Solutions
         </a>
         <a *ngIf="isSignInPage" class="nav-link text-white" routerLink="/service-request" routerLinkActive="active-tab">Service Request</a>
-        <a *ngIf="isSignInPage" class="nav-link text-white" routerLink="/documents" routerLinkActive="active-tab">Documents</a>
+        <a *ngIf="isSignInPage" class="nav-link text-white" routerLink="/document" routerLinkActive="active-tab">Documents</a>
       </div>
   
       <!-- Right-Aligned Nav Item -->

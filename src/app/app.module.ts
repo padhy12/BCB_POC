@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderBCBComponent } from './Components/header-bcb/header-bcb.component';
 import { HomeBodyBCBComponent } from './Components/home-body-bcb/home-body-bcb.component';
 import { SignInBCBComponent } from './Components/sign-in-bcb/sign-in-bcb.component';
+import { DocumentBCBComponent } from './Components/document-bcb/document-bcb.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderBCBComponent,
     HomeBodyBCBComponent,
-    SignInBCBComponent
+    SignInBCBComponent,
+    DocumentBCBComponent
   ],
   imports: [
     BrowserModule,

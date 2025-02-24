@@ -10,6 +10,7 @@ import { NavigationEnd, Router } from '@angular/router';
 export class HeaderBCBComponent {
   isDropdownVisible = false;
   isSignInPage: boolean = false;
+  isDocumentPage: boolean = false;
 
   showDropdown() {
     this.isDropdownVisible = true;
@@ -24,6 +25,7 @@ export class HeaderBCBComponent {
       if (event instanceof NavigationEnd) {
         // ✅ Check if the current route is '/signin'
         this.isSignInPage = event.url === '/signin';
+        this.isDocumentPage  = event.url === '/document';
       }
     });
   }

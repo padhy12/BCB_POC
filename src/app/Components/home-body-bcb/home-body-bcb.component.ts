@@ -9,10 +9,13 @@ import { Router } from '@angular/router';
 })
 export class HomeBodyBCBComponent {
   isSignInPage: boolean = false;
-
+  isServiceRequestPage: boolean = false;
+  isDocumentPage: boolean = false;
   constructor(private router: Router) {
     this.router.events.subscribe(() => {
       this.isSignInPage = this.router.url === '/signin';
+      this.isServiceRequestPage = this.router.url === '/signin';
+      this.isDocumentPage = this.router.url === '/document';
     });
   }
 }
