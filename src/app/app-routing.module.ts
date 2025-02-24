@@ -4,8 +4,8 @@ import { HomeBodyBCBComponent } from './Components/home-body-bcb/home-body-bcb.c
 import { SignInBCBComponent } from './Components/sign-in-bcb/sign-in-bcb.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/home', pathMatch: 'full' }, 
-  { path: '', component: HomeBodyBCBComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, 
+  { path: 'home', component: HomeBodyBCBComponent },
   { path: 'signin', component: SignInBCBComponent }
 ];
 
