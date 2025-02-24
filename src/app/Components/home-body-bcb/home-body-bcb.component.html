@@ -1,28 +1,18 @@
 <!-- Home Section Below Navbar -->
-<!-- <div class="home-section text-white d-flex align-items-center" style="background: url('accessallBG.png') no-repeat center center; background-size: auto; min-height: 500px; ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="fw-bold">Access all your <br/>business needs <br/>in one place</h2>
-          <hr class="my-3" style="border-top: 2px solid white; width: 15rem;">
-          <p>From small to large businesses,<br/> we've got the solutions you need <br/>to get your business ahead.</p>
-          <button class="btn btn-light fw-bold mt-3">Get Started</button>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
 
-  <section class="home-section text-white d-flex align-items-center">
+<div *ngIf="!isSignInPage">
+
+  <section class="home-section">
     <div class="container-fluid">
-        <div class="row align-items-center">
+        <div class="row">
             <!-- Text Section -->
-            <div class="col-lg-6 col-md-12 text-center text-md-start content-box" 
-                >
-                <h2 class="fw-bold">Access all your <br/>business needs <br/>in one place</h2>
-                <hr class="my-3" style="border-top: 2px solid white; width: 15rem;">
-                <p>From small to large businesses,<br/> we've got the solutions you need <br/>to get your business ahead.</p>
-                <button class="btn btn-light fw-bold mt-3">Get Started</button>
+            <div class="col-lg-6 col-md-12 col-left text-start">
+                <div class="content-box text-white">
+                  <h1>Access all your business needs in one place</h1>
+                  <p>From small to large businesses, we've got the solutions you need to get your business ahead.</p>
+                  <button class="btn btn-light fw-bold mt-3">Get Started</button>
+                </div>
             </div>
             <!-- Image Section -->
             <div class="col-lg-6 col-md-12 text-center">
@@ -462,6 +452,7 @@
   <div class="text-center" style="font-size: 0.7rem;">
     Standard Bank is a licensed financial services provider in terms of the Financial Advisory and Intermediary Services <br/> Act and a registered credit provider in terms of the National Credit Act, registration number NCRCP15
   </div>
+</div>
 </div>
 
 

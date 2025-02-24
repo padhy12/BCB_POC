@@ -1,55 +1,71 @@
-/* Large Screens (Desktops) */
-@media (min-width: 1200px) {
-    .navbar-brand span {
-        font-size: 1.5rem;
+/* Default Mega Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+  .navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  .active-tab {
+    background-color: #0062E1 !important; /* Dark blue for active tab */
+    padding: 2px;
+    border-radius: 3px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px;
+    color: white;
+  }
+  .nav-link {
+    margin-right: 20px; 
+  }
+  
+  .ms-auto {
+    margin-left: auto;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      box-shadow: none;
+      padding: 10px;
     }
-}
-
-/* Medium Screens (Tablets) */
-@media (max-width: 991px) {
-    .navbar-nav {
-        flex-direction: column;
-        text-align: center;
+  
+    .dropdown-menu .row {
+      flex-direction: column;
     }
-    .navbar-collapse {
-        text-align: center;
+  
+    .dropdown-menu .col-md-3 {
+      width: 100%;
+      margin-bottom: 10px;
     }
-    .nav-pills {
-        flex-wrap: wrap;
-        justify-content: center !important;
+  
+    .dropdown-menu a {
+      display: block;
+      padding: 8px;
+      font-size: 14px;
+      color: #1042b0;
+      text-decoration: none;
     }
-}
-
-/* Small Screens (Mobile Phones) */
-@media (max-width: 768px) {
-    .navbar-toggler {
-        display: block;
-        border: none;
+  
+    .dropdown-menu a:hover {
+      background-color: #f8f9fa;
     }
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-        font-size: 1.2rem;
-    }
-    .navbar-brand img {
-        height: 30px;
-    }
-    .nav-pills {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-item {
-        text-align: center;
-        width: 100%;
-    }
-}
-
-/* Extra Small Screens */
-@media (max-width: 480px) {
-    .navbar-brand span {
-        font-size: 1rem;
-    }
-    .nav-link {
-        font-size: 0.9rem;
-    }
-}
+  }
+  
