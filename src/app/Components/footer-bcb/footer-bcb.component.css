@@ -1,0 +1,17 @@
+.main-content {
+    flex: 1;
+  }
+  
+  .footer {
+    background-color: #1A314D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.7rem;
+  }
+  .text-center-footer{
+font-family: 'BSP-Regular';
+font-size: 14px;
+line-height: 18.2px;
+
+  }
