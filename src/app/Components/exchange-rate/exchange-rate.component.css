@@ -1,0 +1,63 @@
+.exchange-rate{
+    border: 1px solid #CED3D9; border-radius: 12px; background-color: #FFFFFF;
+    padding: 37px;
+}
+
+
+.currency-dropdown-one{
+    position: relative;
+    border: 1px solid #697786;
+    border-radius: 8px;
+    height: 48px;
+    width: 100%; max-width: 350px;
+}
+.currency-dropdown-one .lable-text{
+    position: absolute;
+    top: -8px;
+    left: 16px;
+    background-color: #FFFFFF;
+    font-family: 'BSP-Regular';
+    font-size: 12px;
+    line-height: normal;
+    color: #222E37;
+}
+.currency-dropdown-one .dropdown{
+    height: 100%; width: 100%;
+}
+.currency-dropdown-one .dropdown .dropdown-toggle{
+    width: 100%; height: 100%;
+    display: flex; align-items: center; column-gap: 12px;
+    font-family: 'BSP-Regular';
+    font-size: 16px;
+    line-height: normal;
+    color: #1A314D;
+
+}
+.currency-dropdown-one .dropdown .dropdown-toggle::after{
+    margin-left: auto; color: #0051FF; font-size: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.time-and-place{
+    width: 100%; max-width: 307px;
+    border-left: 1px solid #697786; padding-left: 40px;
+}
+.time-and-place .time-text{
+    font-family: 'BSP-Medium';
+    font-size: 14px;
+    line-height: 18.2px;
+    color: #697786;
+}
+.time-and-place .place-text{
+    font-family: 'BSP-Medium';
+    font-size: 28px;
+    line-height: 36px;
+    color: #697786;
+    margin-bottom: 0;
+}
+.time-and-place .place-text span{
+    font-size: 20px; line-height: 26px; display: block;
+}

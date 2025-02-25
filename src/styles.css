@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'BSP-Regular', sans-serif;
+}
+
+
+/* OWL Carousel */
+
+/* MY SOLUTIONS Style the dots container */
+
+.solution-card-carousel .owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  /* Style inactive dots */
+ .solution-card-carousel .owl-theme .owl-dots .owl-dot span {
+    min-width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #5C6C80; /* Default dot color */
+    border-radius: 30px;
+    display: inline-block;
+  }
+  
+  /* Style the active dot */
+.solution-card-carousel .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #0062E1 !important; /* Change active dot color */
+  }
+  /* MY SOLUTIONS Style the dots container END */

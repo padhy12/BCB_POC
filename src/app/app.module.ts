@@ -6,6 +6,12 @@ import { HeaderBCBComponent } from './Components/header-bcb/header-bcb.component
 import { HomeBodyBCBComponent } from './Components/home-body-bcb/home-body-bcb.component';
 import { SignInBCBComponent } from './Components/sign-in-bcb/sign-in-bcb.component';
 import { DocumentBCBComponent } from './Components/document-bcb/document-bcb.component';
+import { AuthHomePageComponent } from './pages/auth-home-page/auth-home-page.component';
+import { AdBannerComponent } from './Components/ad-banner/ad-banner.component';
+import { MySolutionsComponent } from './Components/my-solutions/my-solutions.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ExchangeRateComponent } from './Components/exchange-rate/exchange-rate.component';
 
 @NgModule({
   declarations: [
@@ -13,11 +19,17 @@ import { DocumentBCBComponent } from './Components/document-bcb/document-bcb.com
     HeaderBCBComponent,
     HomeBodyBCBComponent,
     SignInBCBComponent,
-    DocumentBCBComponent
+    DocumentBCBComponent,
+    AuthHomePageComponent,
+    AdBannerComponent,
+    MySolutionsComponent,
+    ExchangeRateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
