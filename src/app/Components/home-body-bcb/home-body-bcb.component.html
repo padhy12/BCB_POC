@@ -8,10 +8,10 @@
       <div class="row">
         <!-- Text Section -->
         <div class="col-lg-6 col-md-12 col-left text-start">
-          <div class="content-box text-white">
+          <div class="content text-white">
             <h1>Access all your business needs in one place</h1>
             <p>From small to large businesses, we've got the solutions you need to get your business ahead.</p>
-            <button class="btn btn-light fw-bold mt-3">Get Started</button>
+            <button class="get-started">Get Started</button>
           </div>
         </div>
         <!-- Image Section -->
@@ -111,16 +111,15 @@
         <!-- Text Section -->
         <div class="col-lg-6 col-md-12">
           <div class="content">
-            <h2 class="section-title-one">We’re giving you your time back</h2>
-            <p>From start-ups to businesses looking to scale up, our solutions ensure you don’t
-              waste time on mundane tasks. You have direct access to everything you need to ensure your business’s
+            <h2 class="section-title-one">We're giving you your time back</h2>
+            <p>From start-ups to businesses looking to scale up, our solutions ensure you don't
+              waste time on mundane tasks. You have direct access to everything you need to ensure your business's
               success.
             </p>
             <p>You can easily track your income and expenses, get expert industry knowledge, and
               access all of your Standard Bank solutions in one place.</p>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -138,90 +137,202 @@
   </div>
 
 
-<div class="custom-container">
-  <div class="my-5 knowledge-section">
-    <p class="knowledge-title">Gain valuable knowledge</p>
-    <p class="knowledge-desc">
-      Where are you in your business journey? Our expert-driven insights have the advice and tools you need to succeed,
-      no matter where you are.
-    </p>
+  <div class="custom-container">
+    <div class="my-5 knowledge-section">
+      <h2 class="section-title-one">Gain valuable knowledge</h2>
+      <p class="knowledge-desc">
+        Where are you in your business journey? Our expert-driven insights have the advice and tools you need to
+        succeed,
+        no matter where you are.
+      </p>
 
-    <ul class="nav nav-tabs knowledge-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Starting a new business</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Managing your business</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Growing your business</a>
-      </li>
-    </ul>
+      <ul class="nav nav-tabs mb-4 knowledge-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Starting a new business</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Managing your business</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Growing your business</button>
+        </li>
+      </ul>
 
-    <div class="row mt-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100">
-          <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">12 things to know before starting your own business</h5>
-            <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
-            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">12 things to know before starting your own business</h5>
+                      <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">12 things to know before starting your own business</h5>
+                      <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+                      <p class="card-text">Starting a business requires a significant investment, and in...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
+                      <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">12 things to know before starting your own business</h5>
+                      <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">12 things to know before starting your own business</h5>
+                      <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+                      <p class="card-text">Starting a business requires a significant investment, and in...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
+                      <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">12 things to know before starting your own business</h5>
+                      <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">12 things to know before starting your own business</h5>
+                      <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+                      <p class="card-text">Starting a business requires a significant investment, and in...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card h-100">
+                    <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
+                      <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
+                      <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100">
-          <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">3 ways small businesses can protect themselves</h5>
-            <p class="card-text">Starting a business requires a significant investment, and in...</p>
-            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100">
-          <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
-            <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
-            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100">
-          <img src="girltalkingImg.png" class="card-img-top knowledge-img" alt="Article 4">
-          <div class="card-body d-flex flex-column">
-            <h5 class="card-title">3 characteristics of successful start-up founders</h5>
-            <p class="card-text">Focus on these traits for a successful start-up business positioned for gr...</p>
-            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="text-start mt-4">
-      <button class="btn btn-primary knowledge-btn">VIEW ALL</button>
+
+
+      <div class="text-start mt-4">
+        <button class="btn btn-primary knowledge-btn">VIEW ALL</button>
+      </div>
     </div>
   </div>
-</div>
 
 
 
   <!-- Explore the BCB Platform Section -->
-  <div class="d-flex align-items-center explore-section" style="background-color: lightgray;">
-    <div class="row w-100">
-      <div class="col-md-6 d-flex flex-column justify-content-center p-5">
-        <p style="font-size: xx-large;">Explore the BCB <br /> Platform</p>
-        <p style="font-size: small; margin-top: 1rem;">Watch a sneak peek of the platform before you get started</p>
-        <a href="#" class="text-primary fw-bold">WATCH OUR DEMO →</a>
-      </div>
-      <div class="col-md-6 explore-img-container">
-        <img src="exploreBCB.png" class="img-fluid" alt="BCB Platform Screenshot">
+  <div class="explore-bcb">
+    <div class="custom-container img-te">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!-- Text Section -->
+          <div class="col-lg-6 col-md-12">
+            <div class="content">
+              <h2 class="section-title-one">Explore the BCB <br /> Platform</h2>
+              <p>Watch a sneak peek of the platform before you get started
+              </p>
+              <button type="button" class="btn-text">WATCH our demo <img class="img-fluid" src="./icons/arrow-right.png"
+                  alt="arrow"></button>
+            </div>
+          </div>
+          <!-- Image Section -->
+          <div class="col-lg-6 col-md-12 text-center">
+            <img src="exploreBCB.png" class="img-fluid" alt="BCB Platform Screenshot">
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
 
 
   <!-- Download Our Online Banking for Business App Section -->
@@ -238,80 +349,41 @@
       </div>
     </div>
   </div>
-  <!-- <h2 class="fw-bold">Download our Online Banking for Business app</h2>
-          <p>Manage your banking, make payments and access your information and solutions anytime, anywhere.</p> -->
-  <!-- <div class="d-flex gap-2">
-            <img src="google-play.png" class="img-fluid" alt="Google Play" style="max-width: 120px;">
-            <img src="app-store.png" class="img-fluid" alt="App Store" style="max-width: 120px;">
-            <img src="app-gallery.png" class="img-fluid" alt="App Gallery" style="max-width: 120px;">
-          </div> -->
 
 
-  <!-- Reach Out to Us Section -->
-  <!-- <div class="container my-5">
-  <h2>Reach out to us</h2>
-  <p >Contact us for additional support or find your nearest Standard Bank branch.</p>
-  <div class="row">
-    <div class="col-md-3">
-      <div class="card p-3 text-center">
-        <h6>Help & support</h6>
-        <p>We’re here to help with your questions or queries</p>
-        <button class="btn btn-primary">GIVE US A CALL</button>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card p-3 text-center">
-        <h6>Find us near you</h6>
-        <p>Locate a branch that’s nearest to you</p>
-        <button class="btn btn-primary">FIND A BRANCH</button>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card p-3 text-center">
-        <h6>Connect with us</h6>
-        <p>Connect with a banker for personalised assistance</p>
-        <button class="btn btn-primary">SPEAK TO A BANKER</button>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card p-3 text-center">
-        <h6>Stay informed</h6>
-        <p>Keep up to date with our latest solutions and more</p>
-        <button class="btn btn-primary">SUBSCRIBE TO NEWSLETTER</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-  <div class="container my-5 contact-section" style="padding: 1rem 3rem;">
-    <h2>Reach out to us</h2>
-    <p>Contact us for additional support or find your nearest Standard Bank branch.</p>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-12">
-        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-          <h6>Help & support</h6>
-          <p>We’re here to help with your questions or queries</p>
-          <button class="btn btn-primary">GIVE US A CALL</button>
+
+  <div class="custom-container">
+    <div class="container-fluid my-5 contact-section" style="padding: 1rem 3rem;">
+    <h2 class="section-title-one">Reach out to us</h2>
+      <p>Contact us for additional support or find your nearest Standard Bank branch.</p>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+            <h6>Help & support</h6>
+            <p>We’re here to help with your questions or queries</p>
+            <button class="btn btn-primary">GIVE US A CALL</button>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12">
-        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-          <h6>Find us near you</h6>
-          <p>Locate a branch that’s nearest to you</p>
-          <button class="btn btn-primary">FIND A BRANCH</button>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+            <h6>Find us near you</h6>
+            <p>Locate a branch that’s nearest to you</p>
+            <button class="btn btn-primary">FIND A BRANCH</button>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12">
-        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-          <h6>Connect with us</h6>
-          <p>Connect with a banker for personalised assistance</p>
-          <button class="btn btn-primary">SPEAK TO A BANKER</button>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+            <h6>Connect with us</h6>
+            <p>Connect with a banker for personalised assistance</p>
+            <button class="btn btn-primary">SPEAK TO A BANKER</button>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6 col-12">
-        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-          <h6>Stay informed</h6>
-          <p>Keep up to date with our latest solutions and more</p>
-          <button class="btn btn-primary">SUBSCRIBE TO NEWSLETTER</button>
+        <div class="col-md-3 col-sm-6 col-12">
+          <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+            <h6>Stay informed</h6>
+            <p>Keep up to date with our latest solutions and more</p>
+            <button class="btn btn-primary">SUBSCRIBE TO NEWSLETTER</button>
+          </div>
         </div>
       </div>
     </div>
@@ -319,62 +391,61 @@
 
 
   <!-- Ready to Move to Standard Bank Section -->
-  <div class="container-fluid my-5 px-0">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-white p-5 d-flex flex-column justify-content-center"
-        style="background: linear-gradient(to right, #0033cc, #000099); height: 100%;">
-        <h2>Ready to move to Standard Bank?</h2>
-        <p>We’re serious about where your business is going. <br />Discover why we’re the trusted choice when it
-          comes<br /> to business banking.</p>
-        <button class="btn btn-light mt-3" style="border-radius: 8px; width: 15rem;">SWITCH</button>
+  <div class="container-fluid switch-bank">
+    <div class="row">
+      <div class="col-lg-6 col-left">
+        <div class="content">
+          <h2>Ready to move to Standard Bank?</h2>
+          <p>We’re serious about where your business is going. Discover why we’re the trusted choice when it comes to business banking.</p>
+          <button type="button" class="btn-white">SWITCH</button>
+        </div>
       </div>
-      <div class="col-md-6 p-0">
-        <img src="boyImage.png" alt="Man" class="img-fluid w-100" style="height: 17.7rem;">
-      </div>
+      <div class="col-lg-6 p-0 col-right"></div>
     </div>
   </div>
 
 
   <!-- FAQ Section -->
-  <div class="container my-5">
-    <p style="font-size: xx-large;">FAQs</p>
+  <div class="custom-container faq-section">
+    <h2 class="section-title-one">FAQ's</h2>
     <div class="accordion" id="faqAccordion">
-      <div class="accordion-item" style="background-color: gainsboro;">
+      <div class="accordion-item" style="background-color: #F4F5F7;">
         <h2 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
-            style="background-color: gainsboro;">
+            style="background-color: #F4F5F7;">
             What is the BCB Platform?
           </button>
         </h2>
         <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body" style="background-color: gainsboro;">
-            The BCB Platform is a single home for all of your Standard Bank accounts and solutions. It connects you to a
+          <div class="accordion-body" style="background-color: #F4F5F7;">
+            The BCB Platform is a single home for all of your Standard Bank accounts and solutions. It connects you to
+            a
             variety of products and services, as well as experts to take your business further.
           </div>
         </div>
       </div> <br />
-      <div class="accordion-item" style="background-color: gainsboro;">
+      <div class="accordion-item" style="background-color: #F4F5F7;">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
-            style="background-color: gainsboro;">
+            style="background-color: #F4F5F7;">
             How do I register on the BCB Platform?
           </button>
         </h2>
         <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body" style="background-color: gainsboro;">
+          <div class="accordion-body" style="background-color: #F4F5F7;">
             You can register on the BCB Platform by visiting our website and following the registration process.
           </div>
         </div>
       </div> <br />
-      <div class="accordion-item" style="background-color: gainsboro;">
+      <div class="accordion-item" style="background-color: #F4F5F7;">
         <h2 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
-            style="background-color: gainsboro;">
+            style="background-color: #F4F5F7;">
             How can I explore new solutions?
           </button>
         </h2>
         <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body" style="background-color: gainsboro;">
+          <div class="accordion-body" style="background-color: #F4F5F7;">
             You can explore new solutions by logging into your account and navigating to the solutions section.
           </div>
         </div>
@@ -397,39 +468,3 @@
 
 
 
-<style>
-  .carousel-controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-
-  .carousel-indicators-custom span {
-    display: inline-block;
-    width: 30px;
-    height: 4px;
-    background-color: gray;
-    margin: 0 5px;
-    border-radius: 2px;
-  }
-
-  .carousel-indicators-custom .active {
-    background-color: blue;
-  }
-
-  .custom-btn {
-    border: none;
-    box-shadow: none;
-    /* background: #f8f9fa; */
-    border-radius: 8px;
-    padding: 10px 15px;
-    filter: none;
-  }
-
-  .custom-btn i {
-    font-size: 20px;
-    color: black;
-    filter: none;
-  }
-</style>
