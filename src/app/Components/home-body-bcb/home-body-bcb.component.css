@@ -929,3 +929,30 @@ h2.section-title-one {
     border: 0;
     border-bottom: 2px solid #0062E1;
 }
+
+
+/* download-app */
+.download-app{
+    background: linear-gradient(180deg, #0062E1 0%, #0033AA 100%);
+    padding: 59px 12px;
+    display: flex; align-items: center; justify-content: center; column-gap: 112px; row-gap: 24px; flex-wrap: wrap;
+}
+
+.download-app .mobile-img{
+    border-radius: 36px; overflow: hidden;
+}
+.download-app .content{
+    width: 100%; max-width: 429px; color: #FFFFFF; 
+}
+.download-app h2{
+    font-family: 'BSP-Regular';
+    font-size: 48px;
+    line-height: 62.4px;
+    margin-bottom: 15px;
+}
+.download-app p{
+    font-family: 'BSP-Regular';
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
