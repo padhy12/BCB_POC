@@ -29,4 +29,14 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 0;
+    max-width: 494px;
+}
+
+.btn-blue{
+    border-radius: 8px;
+    padding: 10px 23px;
+    background-color: #0062E1;
+    color: #FFFFFF;
+    font-family: "BSP-Bold"; font-size: 14px; line-height: normal; text-transform: uppercase;
+    min-width: 153px; text-align: center;
 }

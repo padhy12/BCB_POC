@@ -1,1 +1,271 @@
-<p>document-bcb works!</p>
+<div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <p class="heading-blue">Activities</p>
+      <div>
+        <i class="bi bi-gear fs-5 heading-blue2"></i>
+        <a href="#" class="heading-blue2 ms-2">VIEW ALL</a>
+      </div>
+    </div>
+   
+    <div class="row">
+      <!-- Application Tracker -->
+      <div class="col-md-3 card-box">
+        <div class="card p-3 shadow-sm h-100">
+          <p class="activities-boxtext">Application tracker</p>
+          <div
+            class="d-flex justify-content-between small mb-2"
+            style="margin-top: 3rem"
+          >
+            <span>Step 2</span> <span class="fw-bold">In Progress</span>
+          </div>
+          <div class="progress" style="height: 8px">
+            <div class="progress-bar bg-primary" style="width: 40%"></div>
+          </div>
+          <p class="small" style="margin-top: 1rem">
+            <i class="bi bi-file-text"></i> Business Credit - Ref# 0004145697
+          </p>
+          <p class="small"><i class="bi bi-person"></i> Teboho Letshwiti</p>
+        </div>
+      </div>
+   
+      <!-- Future Payments -->
+      <div class="col-md-3 card-box">
+        <div class="card p-3 shadow-sm h-100">
+          <p class="activities-boxtext">Future payments</p>
+          <span class="potential1 mt-4">6 potential payments</span>
+          <span class="potential2">of R 3 456.35 in the next 12 days.</span>
+          <div class="d-flex mt-4">
+            <span class="text-dark">APR</span>
+            <span class="badge bg-light text-dark ms-2">1</span>
+            <span class="badge bg-light text-dark ms-2">6</span>
+            <span class="badge bg-light text-dark ms-2">10</span>
+            <span class="badge bg-light text-dark ms-2">12</span>
+            <span class="badge bg-warning text-dark ms-2">+2</span>
+          </div>
+        </div>
+      </div>
+   
+      <!-- Money Movement -->
+      <div class="col-md-3 card-box">
+        <div class="card p-3 shadow-sm h-100">
+          <p class="activities-boxtext">Money Movement</p>
+          <div style="height: 91%;">
+              <canvas #moneyChart></canvas>
+          </div>
+             
+        </div>
+      </div>
+   
+      <!-- Exchange Rate -->
+      <div class="col-md-3 card-box">
+        <div class="card p-3 shadow-sm h-100">
+          <p class="activities-boxtext">Exchange rate</p>
+          <p style="font-weight: 400; font-size: 14px; line-height: 21px">
+            1 Rand = 0,053 USD
+          </p>
+          <div class="d-flex justify-content-between country-exchange">
+            <div><img src="./icons/flag-africa.png" width="20" /> ZAR</div>
+            <div>4500.80</div>
+          </div>
+          <div class="d-flex justify-content-center my-2">
+            <i class="bi bi-arrow-down-up success fs-5"></i>
+          </div>
+          <!-- <div class="exchange-swap d-flex justify-content-center">&#x21C5;</div> -->
+          <div class="d-flex justify-content-between country-exchange">
+            <div><img src="./icons/flag-africa.png" width="20" /> USD</div>
+            <div>240.54</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+  <div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <p class="heading-blue">Financial health</p>
+      <div>
+          <i class="bi bi-gear fs-5 heading-blue2"></i>
+          <a href="#" class="heading-blue2 ms-2">VIEW ALL</a>
+        </div>
+    </div>
+   
+    <!-- <div class="tabs">
+        <button class="tab active" (click)="setActiveTab('overview')">Overview</button>
+        <button class="tab" (click)="setActiveTab('savings')">Savings</button>
+        <button class="tab" (click)="setActiveTab('expenses')">Expenses</button>
+        <button class="tab" (click)="setActiveTab('insurance')">Insurance</button>
+      </div> -->
+    <div class="tabs">
+      <button
+        class="tab"
+        [ngClass]="{ active: activeTab === 'overview' }"
+        (click)="setActiveTab('overview')"
+        style="border-radius: 0px; font-weight: normal;"
+      >
+        Overview
+      </button>
+      <button
+        class="tab"
+        [ngClass]="{ active: activeTab === 'savings' }"
+        (click)="setActiveTab('savings')"
+        style="border-radius: 0px; font-weight: normal;"
+      >
+        Savings
+      </button>
+      <button
+        class="tab"
+        [ngClass]="{ active: activeTab === 'expenses' }"
+        (click)="setActiveTab('expenses')"
+        style="border-radius: 0px; font-weight: normal"
+      >
+        Expenses
+      </button>
+      <button
+        class="tab"
+        [ngClass]="{ active: activeTab === 'insurance' }"
+        (click)="setActiveTab('insurance')"
+        style="border-radius: 0px; font-weight: normal"
+      >
+        Insurance
+      </button>
+    </div>
+   
+    <div class="tab-content active" *ngIf="activeTab === 'overview'">
+      <div class="overview-container">
+        <div class="pie-chart">
+          <canvas id="savingsChart"></canvas>
+        </div>
+        <!-- <div class="chart-card"> -->
+   
+        <div class="stats">
+          <p><strong>3 month avg spent</strong></p>
+          <h3>R156 321.46</h3>
+          <p>Expenses: R52 010</p>
+          <p>Remaining: R104 311.46</p>
+        </div>
+        <!-- </div> -->
+        <div class="business-ad">
+          <img src="./images/ManLaugh.png" alt="Business Owner" />
+          <div class="ad-content">
+            <h3>Power your entire business the right way</h3>
+            <p>
+              Protect your business from load shedding and get the solar solutions
+              you need with a business solar loan.
+            </p>
+            <button>FIND OUT MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="tab-content" *ngIf="activeTab === 'savings'">
+      <p>Explore your savings strategies and maximize returns...</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut consectetur consequuntur accusamus, eveniet sunt quia illum aspernatur architecto, praesentium nobis hic necessitatibus dolore a est esse vel assumenda deserunt mollitia?</p>
+    </div>
+   
+    <div class="tab-content" *ngIf="activeTab === 'expenses'">
+      <p>Track your expenses and find ways to optimize spending...</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque corrupti corporis est eum, sunt amet dignissimos magnam esse architecto assumenda ad cumque nostrum asperiores ratione delectus quo quisquam illo saepe. Minus similique ab nobis at distinctio architecto vel optio debitis esse sequi perferendis natus perspiciatis error asperiores, possimus in amet?</p>
+    </div>
+   
+    <div class="tab-content" *ngIf="activeTab === 'insurance'">
+      <p>Check your insurance plans and benefits...</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, illum voluptates explicabo ipsum saepe voluptate modi ea porro! Ullam minima voluptatum debitis mollitia! Ullam sint laborum aspernatur et asperiores delectus consectetur maxime nam. Totam, facilis molestiae quos suscipit nesciunt iure, quasi ullam dolorem unde corporis reprehenderit, necessitatibus voluptatem rem itaque.</p>
+    </div>
+  </div>
+   
+  <div class="container my-4 d-flex" style="column-gap: 1rem;">
+    <div class="transaction-history">
+      <p class="heading-blue">Transaction history</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Payment</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vehicle Insurance_HondaJazz 2020</td>
+            <td>-R100,000.00</td>
+            <td>16 Nov 2024</td>
+            <td><span class="status complete">Complete</span></td>
+          </tr>
+          <tr>
+            <td>Vehicle Insurance_HondaJazz 2020</td>
+            <td>-R100,000.00</td>
+            <td>16 Nov 2024</td>
+            <td><span class="status complete">Complete</span></td>
+          </tr>
+          <tr>
+            <td>Vehicle Insurance_HondaJazz 2020</td>
+            <td>-R100,000.00</td>
+            <td>16 Nov 2024</td>
+            <td><span class="status complete">Complete</span></td>
+          </tr>
+          <tr>
+            <td>Vehicle Insurance_HondaJazz 2020</td>
+            <td>-R100,000.00</td>
+            <td>16 Nov 2024</td>
+            <td><span class="status complete">Complete</span></td>
+          </tr>
+          <tr>
+            <td>Vehicle Insurance_HondaJazz 2020</td>
+            <td>-R100,000.00</td>
+            <td>16 Nov 2024</td>
+            <td><span class="status complete">Complete</span></td>
+          </tr>
+          <tr>
+            <td>Vehicle Insurance_HondaJazz 2020</td>
+            <td>-R100,000.00</td>
+            <td>16 Nov 2024</td>
+            <td><span class="status complete">Complete</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="#" class="view-all">View all</a>
+    </div>
+   
+    <div class="statements">
+      <p class="heading-blue">Statements</p>
+      <ul>
+        <li class="statement-item">
+          <div style="display: flex">
+            <div>
+              <p>March 2024 Bank Statement</p>
+              <span>16 March 2024</span>
+            </div>
+            <div style="margin-left: 6rem">
+              <i class="bi bi-download"></i>
+            </div>
+          </div>
+        </li>
+        <li class="statement-item">
+          <div style="display: flex">
+            <div>
+              <p>March 2024 Bank Statement</p>
+              <span>16 March 2024</span>
+            </div>
+            <div style="margin-left: 6rem">
+              <i class="bi bi-download"></i>
+            </div>
+          </div>
+        </li>
+        <li class="statement-item">
+          <div style="display: flex">
+            <div>
+              <p>March 2024 Bank Statement</p>
+              <span>16 March 2024</span>
+            </div>
+            <div style="margin-left: 6rem">
+              <i class="bi bi-download"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="view-all">View all</a>
+    </div>
+  </div>
+   

@@ -5,284 +5,215 @@
 
   <section class="home-section">
     <div class="container-fluid">
-        <div class="row">
-            <!-- Text Section -->
-            <div class="col-lg-6 col-md-12 col-left text-start">
-                <div class="content-box text-white">
-                  <h1>Access all your business needs in one place</h1>
-                  <p>From small to large businesses, we've got the solutions you need to get your business ahead.</p>
-                  <button class="btn btn-light fw-bold mt-3">Get Started</button>
-                </div>
-            </div>
-            <!-- Image Section -->
-            <div class="col-lg-6 col-md-12 text-center">
-                <img src="lapImg.png" alt="Business" class="img-fluid rounded w-100">
-            </div>
+      <div class="row">
+        <!-- Text Section -->
+        <div class="col-lg-6 col-md-12 col-left text-start">
+          <div class="content-box text-white">
+            <h1>Access all your business needs in one place</h1>
+            <p>From small to large businesses, we've got the solutions you need to get your business ahead.</p>
+            <button class="btn btn-light fw-bold mt-3">Get Started</button>
+          </div>
         </div>
+        <!-- Image Section -->
+        <div class="col-lg-6 col-md-12 text-center">
+          <img src="lapImg.png" alt="Business" class="img-fluid rounded w-100">
+        </div>
+      </div>
     </div>
   </section>
 
 
 
-  <!-- Business Section Below Home -->
-  <div class="business-section text-center py-5 bg-white position-relative">
-    <div class="container">
-      <p style="font-size: xx-large;">Let us handle your business</p>
-    </div>
-</div>
+  <!-- Business Section Home -->
 
-
-  <!-- Carousel Section -->
-  <div id="businessCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner container py-5">
-      <div class="carousel-item active">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card text-center p-3 h-100 d-flex flex-column">
-              <img src="bulbImg.png" alt="Icon 1" class="img-fluid mx-auto"/>
-              <h5 class="fw-bold">Monitor your financial health</h5>
-              <p class="flex-grow-1">Keep your business finances stable with our financial management tools.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card text-center p-3 h-100 d-flex flex-column">
-              <img src="bulbImg.png" alt="Icon 2" class="img-fluid mx-auto"/>
-              <h5 class="fw-bold">Get tailored advice</h5>
-              <p class="flex-grow-1">Access resources suited to your business needs through our customised offerings.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card text-center p-3 h-100 d-flex flex-column">
-              <img src="bulbImg.png" alt="Icon 3" class="img-fluid mx-auto"/>
-              <h5 class="fw-bold">Track your business</h5>
-              <p class="flex-grow-1">Control your finances with insights into your cash flow, money movement, and more.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card text-center p-3 h-100 d-flex flex-column">
-              <img src="bulbImg.png" alt="Icon 4" class="img-fluid mx-auto"/>
-              <h5 class="fw-bold">Access everything in one place</h5>
-              <p class="flex-grow-1">Manage your accounts and access your banking services in one centralised place.</p>
-            </div>
-          </div>
+  <div class="business-carousel">
+    <h2 class="section-title-one">Let us handle your business</h2>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>
+        <div class="card text-center">
+          <img class="" src="bulbImg.png" alt="Icon 1" class="img-fluid mx-auto img-fluid icon" />
+          <h5 class="fw-bold">Monitor your financial health</h5>
+          <p>Keep your business finances stable with our financial management tools.</p>
         </div>
-      </div>
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card text-center p-3 h-100 d-flex flex-column">
-              <img src="bulbImg.png" alt="Icon 5" class="img-fluid mx-auto"/>
-              <h5 class="fw-bold">Optimize your business operations</h5>
-              <p class="flex-grow-1">Enhance efficiency with our advanced business management tools.</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
-            <div class="card text-center p-3 h-100 d-flex flex-column">
-              <img src="bulbImg.png" alt="Icon 6" class="img-fluid mx-auto"/>
-              <h5 class="fw-bold">Expand your reach</h5>
-              <p class="flex-grow-1">Grow your business with our market expansion strategies.</p>
-            </div>
-          </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card text-center ">
+          <img src="bulbImg.png" alt="Icon 2" class="img-fluid mx-auto img-fluid icon" />
+          <h5 class="fw-bold">Get tailored advice</h5>
+          <p>Access resources suited to your business needs through our customised offerings.</p>
         </div>
-      </div>
-    </div>
-  </div>
-  
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card text-center ">
+          <img src="bulbImg.png" alt="Icon 3" class="img-fluid mx-auto img-fluid icon" />
+          <h5 class="fw-bold">Track your business</h5>
+          <p>Control your finances with insights into your cash flow, money movement, and more.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card text-center ">
+          <img src="bulbImg.png" alt="Icon 4" class="img-fluid mx-auto img-fluid icon" />
+          <h5 class="fw-bold">Access everything in one place</h5>
+          <p>Manage your accounts and access your banking services in one centralised place.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card text-center ">
+          <img src="bulbImg.png" alt="Icon 5" class="img-fluid mx-auto img-fluid icon" />
+          <h5 class="fw-bold">Optimize your business operations</h5>
+          <p>Enhance efficiency with our advanced business management tools.</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="card text-center ">
+          <img src="bulbImg.png" alt="Icon 6" class="img-fluid mx-auto img-fluid icon" />
+          <h5 class="fw-bold">Expand your reach</h5>
+          <p>Grow your business with our market expansion strategies.</p>
+        </div>
+      </ng-template>
 
-   <div class="carousel-controls text-center mt-3">
-    <button class="btn btn-light custom-btn mx-2" onclick="$('#businessCarousel').carousel('prev')">
-      <i class="bi bi-chevron-left"></i> <!-- Left Arrow -->
-    </button>
-    <span class="carousel-indicators-custom">
-      <span class="active"></span>
-      <span></span>
-    </span>
-    <button class="btn btn-light custom-btn mx-2" onclick="$('#businessCarousel').carousel('next')">
-      <i class="bi bi-chevron-right"></i> <!-- Right Arrow -->
-    </button>
+
+    </owl-carousel-o>
   </div>
+
 
   <!-- Business Priority Section -->
-  <div class="container my-5 business-section">
-    <div class="row align-items-center">
+  <div class="img-and-text-block custom-container">
+    <div class="container-fluid">
+      <div class="row align-items-center">
         <!-- Text Section -->
-        <div class="col-lg-6 col-md-12 text-center text-md-start">
-            <p style="font-size: xx-large;">Your business is our top priority</p>
-            <p style="font-size: medium;">The BCB Platform gives you access to our comprehensive banking, borrowing, and investment solutions.</p>
-            <p style="font-size: medium;">Get tailor-made banking solutions, use our financial health monitor and never worry about the status of your business’s finances. No two businesses are the same; that’s why we tailor your experience.</p>
+        <div class="col-lg-6 col-md-12">
+          <div class="content">
+            <h2 class="section-title-one">Your business is our top priority</h2>
+            <p>The BCB Platform gives you access to our comprehensive banking, borrowing, and
+              investment solutions.</p>
+            <p>Get tailor-made banking solutions, use our financial health monitor and never
+              worry about the status of your business’s finances. No two businesses are the same; that’s why we tailor
+              your
+              experience.</p>
+          </div>
         </div>
         <!-- Image Section -->
         <div class="col-lg-6 col-md-12 text-center">
-            <img src="Core_card_container.png" alt="Business Priority" class="img-fluid rounded w-100" />
+          <img src="Core_card_container.png" alt="Business Priority" class="img-fluid rounded w-100" />
         </div>
+      </div>
     </div>
-</div>
+  </div>
 
-
-
-  <!-- Time Back Section -->
-  <div class="container my-5 time-back-section">
-    <div class="row align-items-center">
-        <div class="col-md-6 text-center text-md-start">
-            <img src="cardGirl.png" alt="Time Back" class="img-fluid rounded"/>
+  <div class="img-and-text-block custom-container">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Image Section -->
+        <div class="col-lg-6 col-md-12 text-center">
+          <img src="cardGirl.png" alt="Business Priority" class="img-fluid rounded w-100" />
         </div>
-        <div class="col-md-6 text-center text-md-start">
-            <p style="font-size: xx-large;">We’re giving you your time back</p>
-            <p style="font-size: medium" >From start-ups to businesses looking to scale up, our solutions ensure you don’t waste time on mundane tasks. You have direct access to everything you need to ensure your business’s success.</p>
-            <p style="font-size: medium">You can easily track your income and expenses, get expert industry knowledge, and access all of your Standard Bank solutions in one place.</p>
+        <!-- Text Section -->
+        <div class="col-lg-6 col-md-12">
+          <div class="content">
+            <h2 class="section-title-one">We’re giving you your time back</h2>
+            <p>From start-ups to businesses looking to scale up, our solutions ensure you don’t
+              waste time on mundane tasks. You have direct access to everything you need to ensure your business’s
+              success.
+            </p>
+            <p>You can easily track your income and expenses, get expert industry knowledge, and
+              access all of your Standard Bank solutions in one place.</p>
+          </div>
         </div>
+
+      </div>
     </div>
-</div>
+  </div>
+
+
+
 
   <!-- Boost Business Section -->
-  <div class="container my-5 boost-business-section">
-    <div class="position-relative">
-        <img src="girlLaptop.jpg" alt="Boost Business" class="img-fluid rounded boost-business-img"/>
-        <div class="position-absolute boost-business-text text-white p-5">
-          <p class="boost-business-title">Boost your<br/> business with <br/>reliable solutions</p>
-          <p class="boost-business-desc">Explore our wide range of financial offerings<br/> and solutions tailored to meet your unique<br/> needs.</p>
-        <button class="btn btn-primary">VIEW SOLUTIONS</button>
-      </div>
-    </div>
-  </div>
-  
-<!-- Gain Valuable Knowledge Section -->
-<!-- <div class="container my-5">
-  <p style="font-size: xx-large;">Gain valuable knowledge</p>
-  <p style="font-size: medium;">Where are you in your business journey? Our expert-driven insights have the advice and tools you need to succeed, no matter where you are.</p>
-  
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Starting a new business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Managing your business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Growing your business</a>
-    </li>
-  </ul>
-  
-  <div class="row mt-4">
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="boyStanding.png" class="card-img-top" alt="Article 1" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">12 things to know before starting your own business</h5>
-          <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="handImage.png" class="card-img-top" alt="Article 2" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 ways small businesses can protect themselves</h5>
-          <p class="card-text">Starting a business requires a significant investment, and in...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="atmShowing.png" class="card-img-top" alt="Article 3" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
-          <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="girltalkingImg.png" class="card-img-top" alt="Article 4" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 characteristics of successful start-up founders</h5>
-          <p class="card-text">Focus on these traits for a successful start-up business positioned for gr...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="text-start mt-4">
-    <button class="btn btn-primary">VIEW ALL</button>
-  </div>
-</div> -->
-<div class="container my-5 knowledge-section">
-  <p class="knowledge-title">Gain valuable knowledge</p>
-  <p class="knowledge-desc">
-    Where are you in your business journey? Our expert-driven insights have the advice and tools you need to succeed, no matter where you are.
-  </p>
-
-  <ul class="nav nav-tabs knowledge-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Starting a new business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Managing your business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Growing your business</a>
-    </li>
-  </ul>
-
-  <div class="row mt-4">
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">12 things to know before starting your own business</h5>
-          <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 ways small businesses can protect themselves</h5>
-          <p class="card-text">Starting a business requires a significant investment, and in...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
-          <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="girltalkingImg.png" class="card-img-top knowledge-img" alt="Article 4">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 characteristics of successful start-up founders</h5>
-          <p class="card-text">Focus on these traits for a successful start-up business positioned for gr...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
+  <div class="custom-container boost-bs-sec">
+    <div class="content">
+      <h2>Boost your business with reliable solutions</h2>
+      <p>Explore our wide range of financial offerings and solutions tailored to meet your unique needs</p>
+      <button type="button" class="btn-blue">VIEW SOLUTIONS</button>
     </div>
   </div>
 
-  <div class="text-start mt-4">
-    <button class="btn btn-primary knowledge-btn">VIEW ALL</button>
+
+<div class="custom-container">
+  <div class="my-5 knowledge-section">
+    <p class="knowledge-title">Gain valuable knowledge</p>
+    <p class="knowledge-desc">
+      Where are you in your business journey? Our expert-driven insights have the advice and tools you need to succeed,
+      no matter where you are.
+    </p>
+
+    <ul class="nav nav-tabs knowledge-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Starting a new business</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Managing your business</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Growing your business</a>
+      </li>
+    </ul>
+
+    <div class="row mt-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100">
+          <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">12 things to know before starting your own business</h5>
+            <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100">
+          <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+            <p class="card-text">Starting a business requires a significant investment, and in...</p>
+            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100">
+          <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
+            <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
+            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100">
+          <img src="girltalkingImg.png" class="card-img-top knowledge-img" alt="Article 4">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">3 characteristics of successful start-up founders</h5>
+            <p class="card-text">Focus on these traits for a successful start-up business positioned for gr...</p>
+            <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-start mt-4">
+      <button class="btn btn-primary knowledge-btn">VIEW ALL</button>
+    </div>
   </div>
 </div>
 
 
 
   <!-- Explore the BCB Platform Section -->
-<div class="d-flex align-items-center explore-section" style="background-color: lightgray;">
+  <div class="d-flex align-items-center explore-section" style="background-color: lightgray;">
     <div class="row w-100">
       <div class="col-md-6 d-flex flex-column justify-content-center p-5">
-        <p style="font-size: xx-large;">Explore the BCB <br/> Platform</p>
+        <p style="font-size: xx-large;">Explore the BCB <br /> Platform</p>
         <p style="font-size: small; margin-top: 1rem;">Watch a sneak peek of the platform before you get started</p>
         <a href="#" class="text-primary fw-bold">WATCH OUR DEMO →</a>
       </div>
@@ -294,21 +225,22 @@
 
 
   <!-- Download Our Online Banking for Business App Section -->
-<div class="container-fluid py-5 app-section" style="background: linear-gradient(to right, #0033cc, #000099); color: white;">
+  <div class="container-fluid py-5 app-section"
+    style="background: linear-gradient(to right, #0033cc, #000099); color: white;">
     <div class="container d-flex align-items-center">
       <div class="row w-100">
         <div class="col-md-6 text-center app-image">
           <img src="SBMobilePng.png" class="img-fluid" alt="Mobile App Screenshot" style="max-width: 250px;">
         </div>
         <div class="col-md-6 d-flex flex-column justify-content-center app-download">
-            <img src="downloadGoogle.png" class="img-fluid" alt="Mobile App Screenshot" style="max-width: 250px;">
+          <img src="downloadGoogle.png" class="img-fluid" alt="Mobile App Screenshot" style="max-width: 250px;">
         </div>
       </div>
     </div>
   </div>
-            <!-- <h2 class="fw-bold">Download our Online Banking for Business app</h2>
+  <!-- <h2 class="fw-bold">Download our Online Banking for Business app</h2>
           <p>Manage your banking, make payments and access your information and solutions anytime, anywhere.</p> -->
-          <!-- <div class="d-flex gap-2">
+  <!-- <div class="d-flex gap-2">
             <img src="google-play.png" class="img-fluid" alt="Google Play" style="max-width: 120px;">
             <img src="app-store.png" class="img-fluid" alt="App Store" style="max-width: 120px;">
             <img src="app-gallery.png" class="img-fluid" alt="App Gallery" style="max-width: 120px;">
@@ -316,7 +248,7 @@
 
 
   <!-- Reach Out to Us Section -->
-<!-- <div class="container my-5">
+  <!-- <div class="container my-5">
   <h2>Reach out to us</h2>
   <p >Contact us for additional support or find your nearest Standard Bank branch.</p>
   <div class="row">
@@ -350,109 +282,117 @@
     </div>
   </div>
 </div> -->
-<div class="container my-5 contact-section" style="padding: 1rem 3rem;">
-  <h2>Reach out to us</h2>
-  <p >Contact us for additional support or find your nearest Standard Bank branch.</p>
-  <div class="row">
-    <div class="col-md-3 col-sm-6 col-12">
-      <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-        <h6>Help & support</h6>
-        <p>We’re here to help with your questions or queries</p>
-        <button class="btn btn-primary">GIVE US A CALL</button>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 col-12">
-      <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-        <h6>Find us near you</h6>
-        <p>Locate a branch that’s nearest to you</p>
-        <button class="btn btn-primary">FIND A BRANCH</button>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 col-12">
-      <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-        <h6>Connect with us</h6>
-        <p>Connect with a banker for personalised assistance</p>
-        <button class="btn btn-primary">SPEAK TO A BANKER</button>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6 col-12">
-      <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
-        <h6>Stay informed</h6>
-        <p>Keep up to date with our latest solutions and more</p>
-        <button class="btn btn-primary">SUBSCRIBE TO NEWSLETTER</button>
-      </div>
-    </div>
-  </div>
-</div>
- 
-
-<!-- Ready to Move to Standard Bank Section -->
-<div class="container-fluid my-5 px-0">
-  <div class="row align-items-center">
-    <div class="col-md-6 text-white p-5 d-flex flex-column justify-content-center" style="background: linear-gradient(to right, #0033cc, #000099); height: 100%;">
-      <h2>Ready to move to Standard Bank?</h2>
-      <p>We’re serious about where your business is going. <br/>Discover why we’re the trusted choice when it comes<br/> to business banking.</p>
-      <button class="btn btn-light mt-3" style="border-radius: 8px; width: 15rem;">SWITCH</button>
-    </div>
-    <div class="col-md-6 p-0">
-      <img src="boyImage.png" alt="Man" class="img-fluid w-100" style="height: 17.7rem;">
-    </div>
-  </div>
-</div>
-
-
-<!-- FAQ Section -->
-<div class="container my-5">
-  <p style="font-size: xx-large;">FAQs</p>
-  <div class="accordion" id="faqAccordion" >
-    <div class="accordion-item" style="background-color: gainsboro;">
-      <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="background-color: gainsboro;" >
-          What is the BCB Platform?
-        </button>
-      </h2>
-      <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-        <div class="accordion-body" style="background-color: gainsboro;">
-          The BCB Platform is a single home for all of your Standard Bank accounts and solutions. It connects you to a variety of products and services, as well as experts to take your business further.
+  <div class="container my-5 contact-section" style="padding: 1rem 3rem;">
+    <h2>Reach out to us</h2>
+    <p>Contact us for additional support or find your nearest Standard Bank branch.</p>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+          <h6>Help & support</h6>
+          <p>We’re here to help with your questions or queries</p>
+          <button class="btn btn-primary">GIVE US A CALL</button>
         </div>
       </div>
-    </div> <br/>
-    <div class="accordion-item" style="background-color: gainsboro;">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="background-color: gainsboro;">
-          How do I register on the BCB Platform?
-        </button>
-      </h2>
-      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body" style="background-color: gainsboro;">
-          You can register on the BCB Platform by visiting our website and following the registration process.
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+          <h6>Find us near you</h6>
+          <p>Locate a branch that’s nearest to you</p>
+          <button class="btn btn-primary">FIND A BRANCH</button>
         </div>
       </div>
-    </div> <br/>
-    <div class="accordion-item" style="background-color: gainsboro;">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="background-color: gainsboro;">
-          How can I explore new solutions?
-        </button>
-      </h2>
-      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-        <div class="accordion-body" style="background-color: gainsboro;">
-          You can explore new solutions by logging into your account and navigating to the solutions section.
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+          <h6>Connect with us</h6>
+          <p>Connect with a banker for personalised assistance</p>
+          <button class="btn btn-primary">SPEAK TO A BANKER</button>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 col-12">
+        <div class="card h-100 p-3 text-center d-flex flex-column justify-content-between contact-card">
+          <h6>Stay informed</h6>
+          <p>Keep up to date with our latest solutions and more</p>
+          <button class="btn btn-primary">SUBSCRIBE TO NEWSLETTER</button>
         </div>
       </div>
     </div>
   </div>
-  <div class=" mt-4">
-    <button class="btn btn-primary px-4 py-2">VIEW ALL</button>
-  </div>
-</div>
 
-<!-- Footer Section -->
-<div class="container-fluid text-white py-3" style="background-color: #1A314D;">
-  <div class="text-center" style="font-size: 0.7rem;">
-    Standard Bank is a licensed financial services provider in terms of the Financial Advisory and Intermediary Services <br/> Act and a registered credit provider in terms of the National Credit Act, registration number NCRCP15
+
+  <!-- Ready to Move to Standard Bank Section -->
+  <div class="container-fluid my-5 px-0">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-white p-5 d-flex flex-column justify-content-center"
+        style="background: linear-gradient(to right, #0033cc, #000099); height: 100%;">
+        <h2>Ready to move to Standard Bank?</h2>
+        <p>We’re serious about where your business is going. <br />Discover why we’re the trusted choice when it
+          comes<br /> to business banking.</p>
+        <button class="btn btn-light mt-3" style="border-radius: 8px; width: 15rem;">SWITCH</button>
+      </div>
+      <div class="col-md-6 p-0">
+        <img src="boyImage.png" alt="Man" class="img-fluid w-100" style="height: 17.7rem;">
+      </div>
+    </div>
   </div>
-</div>
+
+
+  <!-- FAQ Section -->
+  <div class="container my-5">
+    <p style="font-size: xx-large;">FAQs</p>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item" style="background-color: gainsboro;">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+            style="background-color: gainsboro;">
+            What is the BCB Platform?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body" style="background-color: gainsboro;">
+            The BCB Platform is a single home for all of your Standard Bank accounts and solutions. It connects you to a
+            variety of products and services, as well as experts to take your business further.
+          </div>
+        </div>
+      </div> <br />
+      <div class="accordion-item" style="background-color: gainsboro;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+            style="background-color: gainsboro;">
+            How do I register on the BCB Platform?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body" style="background-color: gainsboro;">
+            You can register on the BCB Platform by visiting our website and following the registration process.
+          </div>
+        </div>
+      </div> <br />
+      <div class="accordion-item" style="background-color: gainsboro;">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+            style="background-color: gainsboro;">
+            How can I explore new solutions?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body" style="background-color: gainsboro;">
+            You can explore new solutions by logging into your account and navigating to the solutions section.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" mt-4">
+      <button class="btn btn-primary px-4 py-2">VIEW ALL</button>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="container-fluid text-white py-3" style="background-color: #1A314D;">
+    <div class="text-center" style="font-size: 0.7rem;">
+      Standard Bank is a licensed financial services provider in terms of the Financial Advisory and Intermediary
+      Services <br /> Act and a registered credit provider in terms of the National Credit Act, registration number
+      NCRCP15
+    </div>
+  </div>
 </div>
 
 
@@ -464,6 +404,7 @@
     align-items: center;
     margin-top: 20px;
   }
+
   .carousel-indicators-custom span {
     display: inline-block;
     width: 30px;
@@ -472,9 +413,11 @@
     margin: 0 5px;
     border-radius: 2px;
   }
+
   .carousel-indicators-custom .active {
     background-color: blue;
   }
+
   .custom-btn {
     border: none;
     box-shadow: none;
@@ -483,6 +426,7 @@
     padding: 10px 15px;
     filter: none;
   }
+
   .custom-btn i {
     font-size: 20px;
     color: black;

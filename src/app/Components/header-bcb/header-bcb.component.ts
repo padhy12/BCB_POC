@@ -24,7 +24,7 @@ export class HeaderBCBComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         // ✅ Check if the current route is '/signin'
-        this.isSignInPage = event.url === '/signin';
+        this.isSignInPage = event.url === '/home';
         this.isDocumentPage  = event.url === '/document';
       }
     });

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './ad-banner.component.css'
 })
 export class AdBannerComponent {
-
+  isHidden = false;
 }

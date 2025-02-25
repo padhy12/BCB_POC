@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-home-body-bcb',
@@ -18,4 +19,31 @@ export class HomeBodyBCBComponent {
       this.isDocumentPage = this.router.url === '/document';
     });
   }
+
+
+
+    customOptions: OwlOptions = {
+      loop: true,
+      mouseDrag: true,
+      touchDrag: true,
+      pullDrag: false,
+      dots: true,
+      navSpeed: 700,
+      margin: 16,
+      responsive: {
+        0: {
+          items: 1
+        },
+        400: {
+          items: 1
+        },
+        991: {
+          items: 3,
+        },
+        1024: {
+          items: 4,
+        }
+      },
+      nav: false
+    }
 }

@@ -24,7 +24,7 @@
       <!-- Right Section -->
       <div class="d-flex align-items-center">
         <img src="" alt="" height="35" class="me-2">
-        <a href="#" class="text-white text-decoration-none me-3" routerLink="/signin" >Sign in <i class="bi bi-person-circle"></i></a>
+        <a href="#" class="text-white text-decoration-none me-3" routerLink="/home" >Sign in <i class="bi bi-person-circle"></i></a>
       </div>
     </div>
   </nav>
@@ -37,8 +37,8 @@
         <a class="nav-link text-white dropdown-toggle" href="#" role="button" (mouseenter)="showDropdown()" (mouseleave)="hideDropdown()">
           Our Solutions
         </a>
-        <a *ngIf="isSignInPage" class="nav-link text-white" routerLink="/service-request" routerLinkActive="active-tab">Service Request</a>
-        <a *ngIf="isSignInPage" class="nav-link text-white" routerLink="/document" routerLinkActive="active-tab">Documents</a>
+        <a *ngIf="isSignInPage || isDocumentPage" class="nav-link text-white" routerLink="/service-request" routerLinkActive="active-tab">Service Request</a>
+        <a *ngIf="isSignInPage || isDocumentPage" class="nav-link text-white" routerLink="/document" routerLinkActive="active-tab">Documents</a>
       </div>
   
       <!-- Right-Aligned Nav Item -->

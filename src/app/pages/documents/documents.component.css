@@ -1,0 +1,17 @@
+.document-page{
+    background-color: #F4F5F7;
+    padding: 28px 0 80px;
+}
+.custom-container{
+    width: 100%;
+    max-width: 1212px;
+    margin: 0 auto;
+}
+
+.welcome-user-text{
+    font-family: 'BSP-Medium';
+    font-size: 28px;
+    line-height: 36px;
+    color: #02070D;
+    margin-bottom: 32px;
+}

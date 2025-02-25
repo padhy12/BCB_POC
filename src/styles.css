@@ -4,6 +4,15 @@ body {
 }
 
 
+.section-title {
+  font-family: "BSP-Bold";
+  font-size: 18px;
+  line-height: 23px;
+  color: #003FCA;
+  margin-bottom: 24px;
+}
+
+
 /* OWL Carousel */
 
 /* MY SOLUTIONS Style the dots container */
@@ -14,7 +23,7 @@ body {
   }
   
   /* Style inactive dots */
- .solution-card-carousel .owl-theme .owl-dots .owl-dot span {
+ .business-carousel .owl-theme .owl-dots .owl-dot span {
     min-width: 30px;
     height: 3px;
     margin: 5px;
@@ -24,7 +33,27 @@ body {
   }
   
   /* Style the active dot */
-.solution-card-carousel .owl-theme .owl-dots .owl-dot.active span {
+.business-carousel .owl-theme .owl-dots .owl-dot.active span {
     background-color: #0062E1 !important; /* Change active dot color */
   }
   /* MY SOLUTIONS Style the dots container END */
+
+  .business-carousel .owl-theme .owl-dots {
+    text-align: center;
+    margin-top: 16px;
+  }
+  
+  /* Style inactive dots */
+ .business-carousel .owl-theme .owl-dots .owl-dot span {
+    min-width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: #5C6C80; /* Default dot color */
+    border-radius: 30px;
+    display: inline-block;
+  }
+  
+  /* Style the active dot */
+.business-carousel .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #0062E1 !important; /* Change active dot color */
+  }

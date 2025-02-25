@@ -1,13 +1,22 @@
-<div class="container-fluid g-0 ad-banner p-3 p-md-0">
-    <div class="row align-items-center">
+<div class="container-fluid g-0 ad-banner p-3 p-md-0" [hidden]="isHidden">
+    <div class="row h-100 w-100">
         <div class="col-auto col-md-auto mb-4 mb-md-0">
             <img class="img-fluid" src="./images/ad-image.png" alt="ad image" />
         </div>
-        <div class="col-auto col-md-6">
-            <h2>Power your business the right way</h2>
-            <p>Protect your business from load shedding and get the solar solutions you need with a business solar loan
-            </p>
+        <div class="col d-flex align-items-center">
+            <div class="d-flex align-items-end">
+                <div>
+                    <h2>Power your business the right way</h2>
+                    <p>Protect your business from load shedding and get the solar solutions you need with a business solar loan
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-auto col-md-auto d-flex align-items-end">
+            <div class="py-4">
+                <button type="button" class="btn btn-blue">tell me more</button>
+            </div>
         </div>
     </div>
-    <div class="close-icon"><img class="img-fluid" src="./icons/cancel-icon-sm.png" alt="close-icon" /></div>
+    <div class="close-icon"><img (click)="isHidden = !isHidden" class="img-fluid" src="./icons/cancel-icon-sm.png" alt="close-icon" /></div>
 </div>

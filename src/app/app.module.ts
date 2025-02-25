@@ -12,6 +12,8 @@ import { MySolutionsComponent } from './Components/my-solutions/my-solutions.com
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExchangeRateComponent } from './Components/exchange-rate/exchange-rate.component';
+import { HistoryStatementComponent } from './Components/history-statement/history-statement.component';
+import { DocumentsComponent } from './pages/documents/documents.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { ExchangeRateComponent } from './Components/exchange-rate/exchange-rate.
     AuthHomePageComponent,
     AdBannerComponent,
     MySolutionsComponent,
-    ExchangeRateComponent
+    ExchangeRateComponent,
+    HistoryStatementComponent,
+    DocumentsComponent
   ],
   imports: [
     BrowserModule,
