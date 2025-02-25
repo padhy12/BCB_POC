@@ -6,20 +6,20 @@
     }
   } */
 
-.col-left {
+
+.home-section .col-left {
     background-image: url('../../../../public/BlueImg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
     padding: 107px 12px 62px 54px;
 }
-
-.content-box {
+.home-section .content{
     width: 100%;
     max-width: 419px;
 }
 
-.content-box h1 {
+.home-section .content h1 {
     font-weight: 500;
     font-size: 40px;
     line-height: 48px;
@@ -28,9 +28,10 @@
     position: relative;
     padding-bottom: 25px;
     margin-bottom: 20px;
+    font-family: "BSP-Medium";
 }
 
-.content-box h1::after {
+.home-section .content h1::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -41,9 +42,24 @@
     max-width: 287px;
     background-color: #6ACFF6;
 }
+.home-section .content p{
+    font-family: "BSP-Regular";
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: 0px;
+    margin-bottom: 36px;
+}
+.home-section .content .get-started{
+    padding: 15px; background-color: #FFFFFF; width: 200px; text-align: center; border-radius: 8px; border: 0;
+    font-family: "BSP-Bold";
+    font-size: 14px;
+    line-height: normal;
+    color: #0062E1;
+    text-transform: uppercase;
+}
 
 @media screen and (max-width:1024px) {
-    .col-left {
+    .home-section .col-left {
         padding: 80px 15px;
     }
 
@@ -53,7 +69,7 @@
 }
 
 @media screen and (max-width:990.99px) {
-    .col-left {
+    .home-section .col-left {
         padding: 30px 15px;
     }
 }
@@ -76,14 +92,6 @@
     } */
     .container {
         max-width: 100%;
-    }
-
-    .content-box h2 {
-        font-size: 2.5rem;
-    }
-
-    .content-box p {
-        font-size: 1.2rem;
     }
 
     .carousel-inner .card {
@@ -806,4 +814,118 @@ h2.section-title-one {
     line-height: 20px;
     letter-spacing: 1px;
     border: none;
+}
+
+/* explore-bcb */
+.explore-bcb{
+    background-color: #F4F5F7;
+    padding-top:65px; padding-bottom: 65px;
+}
+.explore-bcb h2{
+    margin-bottom: 30px;
+}
+.explore-bcb p{
+    font-family: "BSP-Regular";
+    font-size: 18px;
+    line-height: 23.4px;
+    color: #1A314D;
+    margin-bottom: 16px;
+}
+.btn-text{
+    border: none; background-color: transparent;
+    padding: 10px 0; color: #0062E1;
+    font-family: "BSP-Bold";
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: inline-flex; align-items: center; column-gap: 8px;
+}
+
+/* switch-bank */
+.switch-bank{
+    height: 100%;
+}
+.switch-bank .col-left{
+    background: linear-gradient(180deg, #0062E1 0%, #0033AA 100%);
+    padding:42px 150px;
+}
+.switch-bank .col-right{
+    background-image: url("/boyImage.png");
+    background-repeat: no-repeat;
+    background-size: 100%; background-position: center;
+}
+
+
+.switch-bank .content{
+    width: 100%; max-width: 400px; color: #FFFFFF; margin-left: auto;
+}
+.switch-bank h2{
+    font-family: 'BSP-Regular';
+    font-size: 48px;
+    line-height: 62.4px;
+    margin-bottom: 15px;
+}
+.switch-bank p{
+    font-family: 'BSP-Regular';
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+.switch-bank .btn-white{
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #0062E1;
+    font-family: "BSP-Bold";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    border: none;
+}
+
+/* faq-section */
+.faq-section{
+    padding-top: 104px; padding-bottom: 104px;
+}
+
+.faq-section .section-title-one{
+    margin-bottom: 30px;
+}
+
+
+/* knowledge-section */
+.knowledge-section .card a.btn{
+    font-family: "BSP-Bold";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #0062E1;
+    padding: 0; text-decoration: none;margin-bottom: 8px;
+}
+/* knowledge-tabs */
+
+.knowledge-tabs{
+    border-bottom: 1px solid #E3E6EA;
+}
+.knowledge-tabs li button{
+    border: 0;
+}
+.knowledge-tabs li button{
+    font-family: "BSP-Medium";
+    font-size: 16px;
+    line-height: normal;
+    color: #5C6C80;
+    padding: 25px 0;
+}
+.knowledge-tabs li:not(:last-child){margin-right: 25px;}
+.knowledge-tabs li button:hover{
+    border: 0;
+}
+.knowledge-tabs li button.active{
+    color: #0062E1 !important;
+    border: 0;
+    border-bottom: 2px solid #0062E1;
 }
