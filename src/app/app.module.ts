@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExchangeRateComponent } from './Components/exchange-rate/exchange-rate.component';
 import { HistoryStatementComponent } from './Components/history-statement/history-statement.component';
 import { DocumentsComponent } from './pages/documents/documents.component';
+import { FooterBCBComponent } from './Components/footer-bcb/footer-bcb.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DocumentsComponent } from './pages/documents/documents.component';
     MySolutionsComponent,
     ExchangeRateComponent,
     HistoryStatementComponent,
-    DocumentsComponent
+    DocumentsComponent,
+    FooterBCBComponent
   ],
   imports: [
     BrowserModule,
