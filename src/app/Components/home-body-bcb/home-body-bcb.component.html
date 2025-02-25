@@ -147,125 +147,136 @@
   </div>
   
 <!-- Gain Valuable Knowledge Section -->
-<!-- <div class="container my-5">
-  <p style="font-size: xx-large;">Gain valuable knowledge</p>
-  <p style="font-size: medium;">Where are you in your business journey? Our expert-driven insights have the advice and tools you need to succeed, no matter where you are.</p>
-  
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Starting a new business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Managing your business</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Growing your business</a>
-    </li>
-  </ul>
-  
-  <div class="row mt-4">
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="boyStanding.png" class="card-img-top" alt="Article 1" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">12 things to know before starting your own business</h5>
-          <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="handImage.png" class="card-img-top" alt="Article 2" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 ways small businesses can protect themselves</h5>
-          <p class="card-text">Starting a business requires a significant investment, and in...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="atmShowing.png" class="card-img-top" alt="Article 3" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
-          <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="card h-100">
-        <img src="girltalkingImg.png" class="card-img-top" alt="Article 4" style="object-fit: cover; height: 200px;">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 characteristics of successful start-up founders</h5>
-          <p class="card-text">Focus on these traits for a successful start-up business positioned for gr...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div class="text-start mt-4">
-    <button class="btn btn-primary">VIEW ALL</button>
-  </div>
-</div> -->
 <div class="container my-5 knowledge-section">
   <p class="knowledge-title">Gain valuable knowledge</p>
   <p class="knowledge-desc">
     Where are you in your business journey? Our expert-driven insights have the advice and tools you need to succeed, no matter where you are.
   </p>
 
-  <ul class="nav nav-tabs knowledge-tabs">
+  <ul class="nav nav-tabs knowledge-tabs" id="knowledgeTabs">
     <li class="nav-item">
-      <a class="nav-link active" href="#">Starting a new business</a>
+      <a class="nav-link active" id="tab1" data-bs-toggle="tab" href="#content1">Starting a new business</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Managing your business</a>
+      <a class="nav-link" id="tab2" data-bs-toggle="tab" href="#content2">Managing your business</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Growing your business</a>
+      <a class="nav-link" id="tab3" data-bs-toggle="tab" href="#content3">Growing your business</a>
     </li>
   </ul>
 
-  <div class="row mt-4">
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="boyStanding.png" class="card-img-top knowledge-img" alt="Article 1">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">12 things to know before starting your own business</h5>
-          <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+  <div class="tab-content mt-4">
+    <div class="tab-pane fade show active" id="content1">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="boyStanding.png" class="card-img-top" alt="Article 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">12 things to know before starting your own business</h5>
+              <p class="card-text">If you're an entrepreneur planning to start your own business we’ve...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="handImage.png" class="card-img-top" alt="Article 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+              <p class="card-text">Starting a business requires a significant investment, and in...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="girltalkingImg.png" class="card-img-top" alt="Article 4">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">How to improve customer service</h5>
+              <p class="card-text">Providing excellent customer service can drive growth and loyalty...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="atmShowing.png" class="card-img-top" alt="Article 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Managing business finances effectively</h5>
+              <p class="card-text">Understanding financial management is key to business success...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="handImage.png" class="card-img-top knowledge-img" alt="Article 2">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 ways small businesses can protect themselves</h5>
-          <p class="card-text">Starting a business requires a significant investment, and in...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+    
+    <div class="tab-pane fade" id="content2">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="atmShowing.png" class="card-img-top" alt="Article 3">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Managing business finances effectively</h5>
+              <p class="card-text">Understanding financial management is key to business success...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="handImage.png" class="card-img-top" alt="Article 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+              <p class="card-text">Starting a business requires a significant investment, and in...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="girltalkingImg.png" class="card-img-top" alt="Article 4">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">How to improve customer service</h5>
+              <p class="card-text">Providing excellent customer service can drive growth and loyalty...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="atmShowing.png" class="card-img-top knowledge-img" alt="Article 3">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Get familiar with chargebacks and fraud claims</h5>
-          <p class="card-text">When consumers become victims of fraud, they can turn to the charge...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+    
+    <div class="tab-pane fade" id="content3">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="boyStanding.png" class="card-img-top" alt="Article 5">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Scaling your business in 2024</h5>
+              <p class="card-text">Strategies to take your business to the next level...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="col-md-3 col-sm-6">
-      <div class="card h-100">
-        <img src="girltalkingImg.png" class="card-img-top knowledge-img" alt="Article 4">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">3 characteristics of successful start-up founders</h5>
-          <p class="card-text">Focus on these traits for a successful start-up business positioned for gr...</p>
-          <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="handImage.png" class="card-img-top" alt="Article 2">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">3 ways small businesses can protect themselves</h5>
+              <p class="card-text">Starting a business requires a significant investment, and in...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card h-100">
+            <img src="girltalkingImg.png" class="card-img-top" alt="Article 4">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">How to improve customer service</h5>
+              <p class="card-text">Providing excellent customer service can drive growth and loyalty...</p>
+              <a href="#" class="btn btn-link mt-auto">READ MORE</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -387,7 +398,7 @@
  
 
 <!-- Ready to Move to Standard Bank Section -->
-<div class="container-fluid my-5 px-0">
+<div class="container-fluid my-5">
   <div class="row align-items-center">
     <div class="col-md-6 text-white p-5 d-flex flex-column justify-content-center" style="background: linear-gradient(to right, #0033cc, #000099); height: 100%;">
       <h2>Ready to move to Standard Bank?</h2>
